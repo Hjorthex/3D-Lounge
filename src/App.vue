@@ -5,13 +5,17 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+      <BottomNav> </BottomNav>
+    
   </div>
 </template>
+
+
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;                                                                                                                                                                                        
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
@@ -29,4 +33,18 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
+
+<script>
+// @ is an alias to /src
+import BottomNav from '@/components/navigation/BottomNav.vue'
+
+export default {
+  name: 'App',
+  components: {
+    BottomNav
+  }
+}
+</script>
+
