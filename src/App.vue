@@ -13,6 +13,20 @@
 
 
 <style>
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue-color: #50b596;
+    --blue-text-color: #25686D;
+    --primary-color: #f6f6f6;
+    --secondary-color: #e2e2e2; 
+    --third-color: #0d0d0d;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;                                                                                                                                                                                        
