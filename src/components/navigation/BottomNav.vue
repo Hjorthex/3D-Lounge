@@ -1,8 +1,8 @@
 <template>
     <nav>
-        <a href="">Test</a>
-        <a href="">Test</a>
-        <a href="">Test</a>
+        <a href="../"><img src="../../assets/Backward.svg" alt=""></a>
+        <router-link to="/forum"><img src="../../assets/Home.svg" alt=""></router-link>
+        <a href=""><img src="../../assets/User.svg" alt=""></a>
     </nav>
 </template>
 
@@ -15,9 +15,12 @@ nav {
     left: 0;
     width: 100vw;
     display: flex;
-    background-color: green;
-    height: 5rem;
+    background-color: #E8E8E8;
+    height: 4.7rem;
     z-index: 100;
+    justify-content: space-evenly;
+    align-items: center;
+    filter: drop-shadow(0 -3px 5px #818181);
 }
 }
 </style>
