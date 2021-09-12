@@ -5,13 +5,31 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+      <BottomNav> </BottomNav>
+    
   </div>
 </template>
 
+
+
 <style>
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue-color: #50b596;
+    --blue-text-color: #25686D;
+    --primary-color: #f6f6f6;
+    --secondary-color: #e2e2e2; 
+    --third-color: #0d0d0d;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;                                                                                                                                                                                        
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
@@ -29,4 +47,18 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
+
+<script>
+// @ is an alias to /src
+import BottomNav from '@/components/navigation/BottomNav.vue'
+
+export default {
+  name: 'App',
+  components: {
+    BottomNav
+  }
+}
+</script>
+
