@@ -129,14 +129,14 @@
         margin-top: 4rem;
     }
 
-     .header-nav__signin ul {
-         display: flex;
-         flex-direction: row;
-         justify-content: space-evenly;
-     }
+    .header-nav__signin ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
      .header-nav__signin ul li {
-         padding: 1rem;
+        padding: 1rem;
      }
 
      a {
@@ -262,5 +262,3 @@ export default ({
     }
     })
 </script>
-
-
