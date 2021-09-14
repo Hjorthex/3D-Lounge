@@ -7,16 +7,20 @@
 </template>
 
 <style scoped>
+nav {
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
 nav {
+    display: block;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100vw;
     display: flex;
     background-color: #E8E8E8;
-    height: 4.7rem;
+    height: 4rem;
     z-index: 100;
     justify-content: space-evenly;
     align-items: center;
