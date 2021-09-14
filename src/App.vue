@@ -7,6 +7,7 @@
     <router-view></router-view>
       <BottomNav></BottomNav>
       <TopNav></TopNav>
+      <Explanations></Explanations>
     
   </div>
 </template>
