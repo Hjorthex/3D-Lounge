@@ -15,7 +15,7 @@
         <div id="burger-close" class="burgermenu-close-btn"></div>
         <nav>
             <ul>
-                <li><a href="">Troubleshoot</a></li>
+                <li><router-link to="/troubleshoot/issue-1">Issue1</router-link></li>
                 <li><a href="">Forum</a></li>
                 <li><a href="">Gallery</a></li>
             </ul>
@@ -37,7 +37,7 @@
         </a>
         <nav class="header-desk-nav">
             <ul>
-                <li><a href="">Troubleshoot</a></li>
+                <li><router-link to="/troubleshoot/issue-1">Issue1</router-link></li>
                 <li><a href="">Forum</a></li>
                 <li><a href="">Gallery</a></li>
             </ul>
