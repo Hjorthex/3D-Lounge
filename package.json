@@ -12,7 +12,6 @@
     "firebase": "^9.0.1",
     "jquery": "^3.6.0",
     "tailwind": "^4.0.0",
-    "tailwindcss": "^2.2.14",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"
   },
@@ -20,6 +19,9 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.36",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14",
     "vue-template-compiler": "^2.6.11"
   }
 }
