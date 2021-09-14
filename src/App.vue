@@ -5,19 +5,20 @@
       <router-link to="/troubleshoot/issue-1">Issue1</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
-      <BottomNav> </BottomNav>
+    <router-view></router-view>
+      <BottomNav></BottomNav>
+      <TopNav></TopNav>
     
   </div>
 </template>
-
-
 
 <style>
 
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 :root {
@@ -54,12 +55,18 @@
 <script>
 // @ is an alias to /src
 import BottomNav from '@/components/navigation/BottomNav.vue'
+import TopNav from '@/components/navigation/TopNav.vue'
+
 
 export default {
   name: 'App',
   components: {
-    BottomNav
+    BottomNav,
+    TopNav
   }
 }
+
+
 </script>
+
 
