@@ -7,8 +7,10 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "bootstrap": "^5.1.1",
     "core-js": "^3.6.5",
     "firebase": "^9.0.1",
+    "jquery": "^3.6.0",
     "tailwind": "^4.0.0",
     "tailwindcss": "^2.2.14",
     "vue": "^2.6.11",
