@@ -11,7 +11,6 @@
             <div class="burger-part"></div>
         </div>
     </div>
-    
     <div id="burger-menu" class="burgermenu-wrapper">
         <div id="burger-close" class="burgermenu-close-btn"></div>
         <nav>
@@ -28,6 +27,31 @@
                     <li>
                         <a href="">Sign up</a>
                     </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="header-desk-wrapper">
+        <a href="">
+            <div class="header-desk__temp-logo"></div>
+        </a>
+        <nav class="header-desk-nav">
+            <ul>
+                <li><a href="">Troubleshoot</a></li>
+                <li><a href="">Forum</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+            <div class="header-desk-nav__signin">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="header-desk-nav__signin-icon-border">
+                                <div class="header-desk-nav__signin-icon"></div>
+                            </div>
+                            Sign in
+                        </a>
+                        </li>
+                    <li><a href="">Sign up</a></li>
                 </ul>
             </div>
         </nav>
@@ -72,7 +96,7 @@
     .burgermenu-wrapper {
         width: 100vw;
         height: 100vh;
-        background-color: var(--blue-color);
+        background-color: var(--primary-color);
         position: fixed;
         left: 100vw;
         padding-top: 15rem;
@@ -84,6 +108,7 @@
     .burgermenu-wrapper nav {
         display: flex;
         flex-direction: column;
+        margin-right: 2rem;
     }
 
     .burgermenu-wrapper nav ul {
@@ -94,6 +119,11 @@
         margin: 1rem 0 1rem 0;
     }
 
+    .burgermenu-wrapper nav ul li a {
+        color: var(--blue-color);
+        font-size: 1.2em;
+    }
+
     .header-nav__signin {
         text-align: center;
         margin-top: 4rem;
@@ -102,7 +132,6 @@
      .header-nav__signin ul {
          display: flex;
          flex-direction: row;
-         width: 100vw;
          justify-content: space-evenly;
      }
 
@@ -151,6 +180,70 @@
         transform: rotate(-45deg);
         border-radius: 0.5rem;
     }
+
+    .header-desk-wrapper {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+
+    .burgermenu-wrapper {
+        display: none;
+    }
+
+    .header-desk-wrapper {
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 5rem;
+        background-color: var(--primary-color);
+        justify-content: space-between;
+    }
+
+    .header-desk__temp-logo {
+        width: 3rem;
+        height: 3rem;
+        background-color: var(--blue-color);
+        margin: 1rem;
+    }
+
+    .header-desk-nav {
+        display: flex;
+        flex-direction: row;
+        margin-right: 1rem;
+        align-items: center;
+    }
+
+    .header-desk-nav ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    .header-desk-nav ul li {
+        margin: 0 1rem 0 1rem;
+    }
+
+        .header-desk-nav ul li a {
+        text-decoration: none;
+        color: var(--third-color);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+
+.header-desk-nav__signin-icon-border {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: solid 0.2rem var(--blue-color);
+    margin-right: 0.5rem;
+
+}
 
 }
 </style>
