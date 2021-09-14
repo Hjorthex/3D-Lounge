@@ -6,6 +6,7 @@
     </div>
     <router-view/>
       <BottomNav> </BottomNav>
+      
     
   </div>
 </template>
